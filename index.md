@@ -1,5 +1,3 @@
-<div style="text-align: center;">
-
 # Reza Hosseinzadeh | رضا حسین‌زاده
 مسلم📿Muslim
 
@@ -25,5 +23,3 @@ ETH, DAI, BNB, etc: 0x4f9f4F03B42c80A972c97131bF995845B283245F
 [اینجا را هم ببینید بد نیست!](https://daramet.com/rhodium)
 
 Other: [Lemmy](https://programming.dev/u/Reza) - [Gitlab](https://framagit.org/RZHSSNZDH/) - [OpenStreetMap](https://www.openstreetmap.org/user/RezaHosseinzadeh) - [Github](https://github.com/RZHSSNZDH/)
-
-</div>
