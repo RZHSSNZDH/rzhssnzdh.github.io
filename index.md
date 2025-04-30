@@ -1,4 +1,9 @@
-# Reza Hosseinzadeh | رضا حسین‌زاده
+---
+title: "Reza Hosseinzadeh | رضا حسین‌زاده"
+output: 
+  html_document:
+     css: ./style.css
+---
 مسلم📿Muslim
 
 𐱅𐰇𐰼𐰜🐺🌙Turk
