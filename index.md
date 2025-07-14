@@ -12,7 +12,7 @@
 
 Socials: <a rel="me" href="https://mas.to/@rezaHoss">Mastodon</a> - [ابیاتی چند](https://t.me/abyatichand) - [Matrix](https://matrix.to/#/@rezahoss:matrix.org) - [ایتا](https://eitaa.com/s/HhhHoss) - [سروش](https://splus.ir/rezahoss) - [Pixelfed](https://pixelfed.social/RezaHoss) - [Telegram](https://t.me/Rhodium103) - [Linkedin](https://www.linkedin.com/in/reza-hosseinzadeh-9b73b8255/) - [Twitter](https://x.com/RezaHoss)
 
-Blogs: [بلاگ](https://paper.wf/reza) - [خوراک بلاگ](https://paper.wf/reza/feed) - [ویرگول](https://virgool.io/@RezaHosseinzadeh) - [Medium](https://rezahoss.medium.com/)
+Blogs: [بلاگ فارسی](https://paper.wf/reza) - [خوراک بلاگ فارسی](https://paper.wf/reza/feed) - [بلاگ ترکی](https://paper.wf/turkish) - [خوراک بلاگ ترکی](https://paper.wf/turkish/feed) - [ویرگول](https://virgool.io/@RezaHosseinzadeh) - [Medium](https://rezahoss.medium.com/)
 
 [Support me?](https://liberapay.com/rezahosseinzadeh/donate)
 
