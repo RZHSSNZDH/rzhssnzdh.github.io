@@ -17,7 +17,7 @@ I am Reza Hosseinzadeh borned in [Naghadeh](https://en.wikipedia.org/wiki/Naghad
 
 Socials: <a rel="me" href="https://mas.to/@rezaHoss">Mastodon</a> - [ابیاتی چند](https://t.me/abyatichand) - [Matrix](https://matrix.to/#/@rezahoss:matrix.org) - [ایتا](https://eitaa.com/s/HhhHoss) - [سروش](https://splus.ir/rezahoss) - [Pixelfed](https://pixelfed.social/RezaHoss) - [Telegram](https://t.me/Rhodium103) - [Linkedin](https://www.linkedin.com/in/reza-hosseinzadeh-9b73b8255/) - [Twitter (Archived)](https://x.com/RezaHoss)
 
-Blogs: [بلاگ](https://paper.wf/reza) - [خوراک بلاگ](https://paper.wf/reza/feed) - [ویرگول (بایگانی)](https://virgool.io/@RezaHosseinzadeh) - [Medium](https://rezahoss.medium.com/)
+Blogs: [بلاگ](https://text.tchncs.de/reza) - [خوراک بلاگ](https://text.tchncs.de/reza/feed) - [ویرگول (بایگانی)](https://virgool.io/@RezaHosseinzadeh) - [Medium](https://rezahoss.medium.com/)
 
 [Support me?](https://liberapay.com/rezahosseinzadeh/donate)
 
