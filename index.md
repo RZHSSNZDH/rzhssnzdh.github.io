@@ -11,7 +11,7 @@ I am Reza Hosseinzadeh borned in [Naghadeh](https://en.wikipedia.org/wiki/Naghad
 
 ---
 
-[eMail](mailto:rezahosseinzdeh@riseup.net)
+[eMail](mailto:rezahosseinzadeh@riseup.net)
 
 [GPG](./GPG.asc)
 
