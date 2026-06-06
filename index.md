@@ -19,8 +19,6 @@ Socials: <a rel="me" href="https://mas.to/@rezaHoss">Mastodon</a> - [ابیات�
 
 Blogs: [بلاگ](https://text.tchncs.de/reza) - [خوراک بلاگ](https://text.tchncs.de/reza/feed) - [ویرگول (بایگانی)](https://virgool.io/@RezaHosseinzadeh) - [Medium](https://rezahoss.medium.com/)
 
-[کتاب‌هایی که خوانده‌ام](https://www.goodreads.com/user/show/194075834)
-
 [Support me?](https://liberapay.com/rezahosseinzadeh/donate)
 
 BTC: bc1qt3ypmyj4kdak9jk0dkej4prl9vv2dte9qy5xq9
