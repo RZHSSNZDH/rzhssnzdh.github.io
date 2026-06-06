@@ -1,7 +1,7 @@
 # رضا حسین‌زاده
 مسلم📿Muslim
 
-𐱅𐰇𐰼𐰜🐺🌙Turk
+𐱅𐰇𐰼𐰜🐺🌙Türk
 
 جمهوری اسلامی ایران🇮🇷Islamic Republic of Iran
 
