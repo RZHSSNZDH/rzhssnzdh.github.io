@@ -13,7 +13,7 @@ I am Reza Hosseinzadeh borned in [Naghadeh](https://en.wikipedia.org/wiki/Naghad
 
 [eMail](mailto:rezahosseinzadeh@riseup.net)
 
-[GPG](./GPG.asc)
+[GPG](./files/GPG.asc)
 
 Socials: <a rel="me" href="https://mas.to/@rezaHoss">Mastodon</a> - [ابیاتی چند](https://t.me/abyatichand) - [Matrix](https://matrix.to/#/@rezahoss:matrix.org) - [ایتا](https://eitaa.com/s/HhhHoss) - [سروش](https://splus.ir/rezahoss) - [Pixelfed](https://pixelfed.social/RezaHoss) - [Telegram](https://t.me/Rhodium103) - [Linkedin](https://www.linkedin.com/in/reza-hosseinzadeh-9b73b8255/) - [Twitter (Archived)](https://x.com/RezaHoss)
 
