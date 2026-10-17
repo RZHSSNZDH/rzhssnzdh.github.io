@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="شعری تصادفی از گنجور">
+  <title>گنجورند</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2317766f'/%3E%3Cpath d='M16 5l3.2 7.8L27 16l-7.8 3.2L16 27l-3.2-7.8L5 16l7.8-3.2z' fill='%23f1d28b'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply the saved theme before first paint (avoids a flash).
+    try {
+      const t = JSON.parse(localStorage.getItem("gj.theme") || "null");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="7 4 20 12 7 20 7 4"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+    <symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  </defs>
+</svg>
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="./" aria-label="گنجورند">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="10" class="bm-bg"/>
+      <path d="M16 5l3.2 7.8L27 16l-7.8 3.2L16 27l-3.2-7.8L5 16l7.8-3.2z" class="bm-star"/>
+      <circle cx="16" cy="16" r="2.4" class="bm-bg"/>
+    </svg>
+    <span class="brand-name">گنجورند</span>
+  </a>
+
+  <div class="tools">
+    <button class="icon-btn" id="btnSmaller" title="کوچک‌کردن نوشته" aria-label="کوچک‌کردن نوشته">
+      <svg class="i"><use href="#i-type"/></svg><small>−</small>
+    </button>
+    <button class="icon-btn" id="btnBigger" title="بزرگ‌کردن نوشته" aria-label="بزرگ‌کردن نوشته">
+      <svg class="i"><use href="#i-type"/></svg><small>+</small>
+    </button>
+    <button class="icon-btn" id="btnTheme" title="تم تیره/روشن" aria-label="تغییر تم">
+      <svg class="i"><use id="themeIcon" href="#i-moon"/></svg>
+    </button>
+    <button class="icon-btn" id="btnLibrary" title="نشان‌شده‌ها و تاریخچه" aria-label="نشان‌شده‌ها و تاریخچه">
+      <svg class="i"><use href="#i-book"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="hero">
+    <p class="eyebrow">گنجور · شعر تصادفی</p>
+    <h1>شعری برای همین لحظه</h1>
+    <p class="lead">نام شاعر، مسیر یک بخش، یا نشانی کامل را بنویسید؛ یا فقط Enter بزنید.</p>
+
+    <form id="searchForm" class="search" autocomplete="off" role="search">
+      <svg class="i search-icon"><use href="#i-search"/></svg>
+      <input id="q" type="text" dir="rtl" spellcheck="false"
+             placeholder="حافظ  ·  hafez/ghazal  ·  moulavi"
+             aria-label="جستجوی شاعر یا بخش">
+      <button class="btn primary" type="submit" id="goBtn">شعر تصادفی</button>
+      <div id="suggest" class="suggest" hidden></div>
+    </form>
+
+    <div id="chips" class="chips" aria-label="شاعران"></div>
+  </section>
+
+  <p id="notice" class="notice" role="status" hidden></p>
+
+  <article id="poem" class="poem-card is-empty" aria-live="polite" aria-busy="false">
+    <div class="skeleton" aria-hidden="true">
+      <span class="sk sk-s"></span><span class="sk sk-l"></span>
+      <span class="sk-orn"></span>
+      <span class="sk sk-m"></span><span class="sk sk-m"></span>
+      <span class="sk sk-m"></span><span class="sk sk-m"></span>
+      <span class="sk sk-m"></span><span class="sk sk-m"></span>
+    </div>
+
+    <div class="empty">
+      <div class="orn"><i></i></div>
+      <p>یک شاعر را انتخاب کنید یا Enter بزنید.</p>
+    </div>
+
+    <div class="poem-content" hidden>
+      <header class="poem-head">
+        <p class="kicker" id="kicker"></p>
+        <h2 class="poem-title" id="poemTitle"></h2>
+        <div class="orn"><i></i></div>
+      </header>
+      <div class="verses" id="verses"></div>
+      <footer class="poem-foot">
+        <div class="orn small"><i></i></div>
+        <p class="metre" id="metre" hidden></p>
+        <p class="rec-note" id="recNote" hidden></p>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<!-- Floating action dock -->
+<div class="dock">
+  <div class="dock-inner">
+    <div class="player" id="player" hidden>
+      <button class="icon-btn solid" id="btnPlay" aria-label="پخش خوانش" title="پخش / توقف">
+        <svg class="i"><use id="playIcon" href="#i-play"/></svg>
+      </button>
+      <input type="range" id="seek" min="0" max="1000" value="0" dir="ltr" aria-label="پیشرفت خوانش">
+      <span class="time" id="time" dir="ltr">۰:۰۰</span>
+      <select id="artist" aria-label="خوانندهٔ خوانش"></select>
+    </div>
+
+    <div class="actions">
+      <button class="btn primary" id="btnAgain" title="Ctrl+R یا R">
+        <svg class="i"><use href="#i-shuffle"/></svg><span>یکی دیگر</span>
+      </button>
+      <button class="btn ghost" id="btnFav" aria-pressed="false" title="نشان‌کردن">
+        <svg class="i"><use href="#i-heart"/></svg><span class="lbl">نشان</span>
+      </button>
+      <button class="btn ghost" id="btnCopy" title="رونوشت شعر">
+        <svg class="i"><use href="#i-copy"/></svg><span class="lbl">رونوشت</span>
+      </button>
+      <a class="btn ghost" id="btnSite" target="_blank" rel="noopener" href="https://ganjoor.net" title="باز کردن در گنجور">
+        <svg class="i"><use href="#i-link"/></svg><span class="lbl">گنجور</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Library drawer -->
+<dialog id="drawer" class="drawer">
+  <div class="drawer-head">
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tabFavs" aria-selected="true">نشان‌شده‌ها</button>
+      <button role="tab" id="tabHist" aria-selected="false">تاریخچه</button>
+    </div>
+    <button class="icon-btn" id="drawerClose" aria-label="بستن"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <ul id="drawerList" class="drawer-list"></ul>
+  <div class="drawer-foot"><button class="btn ghost small" id="clearBtn">پاک‌کردن این فهرست</button></div>
+</dialog>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<footer class="site-foot">
+  بازنویسی وب از <a href="https://framagit.org/RZHSSNZDH/gganjoorand" target="_blank" rel="noopener">گنجورند</a>
+  · دادهٔ شعرها از <a href="https://ganjoor.net" target="_blank" rel="noopener">گنجور</a>
+  · GPL-3.0-or-later
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
