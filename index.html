@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Reza Hosseinzadeh (رضا حسین‌زاده) — personal page and links.">
+  <title>رضا حسین‌زاده · Reza Hosseinzadeh</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2317766f'/%3E%3Cpath d='M16 5l3.2 7.8L27 16l-7.8 3.2L16 27l-3.2-7.8L5 16l7.8-3.2z' fill='%23f1d28b'/%3E%3C/svg%3E">
+  <script>
+    // Same storage key as /ganjoor, so the theme choice carries across both pages.
+    try {
+      const t = JSON.parse(localStorage.getItem("gj.theme") || "null");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+    } catch {}
+  </script>
+  <style>
+    /* Parchment & turquoise by day, ink & gold by night (same tokens as /ganjoor). */
+    :root {
+      color-scheme: light;
+      --bg: #f4eee2;
+      --bg-2: #eadfca;
+      --card: #fffaf0;
+      --card-2: #fbf3e2;
+      --ink: #2a2433;
+      --ink-soft: #4a4153;
+      --muted: #8a7d70;
+      --line: rgba(140, 104, 44, 0.24);
+      --accent: #17766f;
+      --accent-2: #1f958b;
+      --accent-ink: #ffffff;
+      --gold: #b88a35;
+      --gold-soft: rgba(184, 138, 53, 0.14);
+      --shadow: 0 28px 60px -28px rgba(70, 45, 10, 0.45), 0 2px 6px rgba(70, 45, 10, 0.06);
+
+      --font-ui: "Vazirmatn", "Noto Sans Arabic UI", "Noto Sans Arabic", "DejaVu Sans", system-ui, sans-serif;
+      --font-poem: "Noto Naskh Arabic", "Vazirmatn", "Noto Sans Arabic", "DejaVu Sans", serif;
+      --font-turkic: "Noto Sans Old Turkic", "Segoe UI Historic", "Noto Sans Arabic", sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #0f1018; --bg-2: #171826; --card: #1a1b29; --card-2: #202136;
+        --ink: #efe8d8; --ink-soft: #cfc7b6; --muted: #9a917f;
+        --line: rgba(226, 184, 102, 0.22);
+        --accent: #3fb5aa; --accent-2: #63d0c5; --accent-ink: #07211f;
+        --gold: #e2b866; --gold-soft: rgba(226, 184, 102, 0.12);
+        --shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.3);
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #0f1018; --bg-2: #171826; --card: #1a1b29; --card-2: #202136;
+      --ink: #efe8d8; --ink-soft: #cfc7b6; --muted: #9a917f;
+      --line: rgba(226, 184, 102, 0.22);
+      --accent: #3fb5aa; --accent-2: #63d0c5; --accent-ink: #07211f;
+      --gold: #e2b866; --gold-soft: rgba(226, 184, 102, 0.12);
+      --shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; min-height: 100vh;
+      font-family: var(--font-ui); color: var(--ink); background: var(--bg);
+      line-height: 1.75; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    }
+    button { font: inherit; color: inherit; cursor: pointer; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 10px; }
+
+    .i { width: 1.15em; height: 1.15em; flex: none; fill: none; stroke: currentColor;
+         stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Backdrop: soft glows + faint lattice */
+    .backdrop {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(60rem 36rem at 85% -10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+        radial-gradient(48rem 30rem at 0% 110%, color-mix(in srgb, var(--gold) 18%, transparent), transparent 70%),
+        linear-gradient(var(--bg), var(--bg-2));
+    }
+    .backdrop::after {
+      content: ""; position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='none' stroke='%23b88a35' stroke-opacity='.16' stroke-width='1'%3E%3Crect x='22' y='22' width='44' height='44'/%3E%3Crect x='22' y='22' width='44' height='44' transform='rotate(45 44 44)'/%3E%3Ccircle cx='44' cy='44' r='9'/%3E%3C/g%3E%3C/svg%3E");
+      -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 62%);
+              mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 62%);
+    }
+
+    /* Top bar */
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: .7rem clamp(1rem, 4vw, 2.2rem);
+      padding-top: max(.7rem, env(safe-area-inset-top));
+      background: linear-gradient(var(--bg), color-mix(in srgb, var(--bg) 0%, transparent));
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    }
+    .brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--ink); }
+    .brand-mark { width: 2.1rem; height: 2.1rem; }
+    .bm-bg { fill: var(--accent); }
+    .bm-star { fill: #f1d28b; }
+    .brand-name { font-weight: 800; font-size: 1.15rem; }
+    .icon-btn {
+      display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem;
+      border-radius: 50%; border: 1px solid transparent; background: transparent; color: var(--ink-soft);
+      transition: background .15s, border-color .15s, color .15s;
+    }
+    .icon-btn:hover { background: var(--gold-soft); border-color: var(--line); color: var(--ink); }
+
+    /* Layout */
+    .page { width: min(100% - 2rem, 46rem); margin: 0 auto; padding: 1rem 0 3rem; display: grid; gap: 1.1rem; }
+    .card {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 22px; padding: clamp(1.1rem, 3vw, 1.6rem);
+      box-shadow: var(--shadow);
+    }
+    .card h2 { margin: 0 0 .7rem; font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+
+    /* Hero */
+    .hero { text-align: center; padding: clamp(1.8rem, 6vw, 3rem) clamp(1.1rem, 4vw, 2rem); border-radius: 28px; }
+    .hero h1 {
+      margin: 0; font-family: var(--font-poem); font-weight: 700;
+      font-size: clamp(2.2rem, 7vw, 3.2rem); line-height: 1.3;
+    }
+    .hero .en { margin: .15rem 0 0; color: var(--muted); font-size: 1.05rem; letter-spacing: .02em; }
+
+    .orn { display: flex; align-items: center; gap: .8rem; justify-content: center; margin: 1.1rem auto; max-width: 14rem; color: var(--gold); }
+    .orn::before, .orn::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, currentColor); }
+    .orn::after { transform: scaleX(-1); }
+    .orn i { width: .6rem; height: .6rem; background: currentColor; transform: rotate(45deg); }
+
+    .ids { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 0; padding: 0; list-style: none; }
+    .ids li {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .3rem .85rem; border-radius: 999px;
+      background: var(--card-2); border: 1px solid var(--line); color: var(--ink-soft); font-size: .95rem;
+    }
+    .ids .tr { font-family: var(--font-turkic); }
+
+    /* About */
+    .about p { margin: 0; color: var(--ink-soft); max-width: 62ch; }
+
+    /* Ganjoorand feature */
+    .feature {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, var(--card)), var(--card));
+    }
+    .feature h2 { margin: 0; font-family: var(--font-poem); font-size: 1.5rem; }
+    .feature p { margin: .1rem 0 0; color: var(--ink-soft); }
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .6rem 1.2rem; border-radius: 999px; border: 1px solid transparent;
+      font-weight: 700; text-decoration: none; transition: transform .15s, background .15s;
+    }
+    .btn.primary { background: var(--accent); color: var(--accent-ink); }
+    .btn.primary:hover { background: var(--accent-2); }
+    .btn:active { transform: translateY(1px); }
+
+    /* Link groups */
+    .group { display: grid; grid-template-columns: 7rem 1fr; gap: .5rem 1rem; align-items: start; padding: .65rem 0; }
+    .group + .group { border-top: 1px dashed var(--line); }
+    .group h3 { margin: .3rem 0 0; font-size: .95rem; font-weight: 600; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+    .chips a {
+      display: inline-block; padding: .2rem .8rem; border-radius: 999px;
+      background: var(--card-2); border: 1px solid var(--line);
+      color: var(--ink); text-decoration: none; font-size: .95rem;
+      transition: background .15s, border-color .15s, color .15s;
+    }
+    .chips a:hover { background: var(--gold-soft); border-color: var(--gold); color: var(--accent); }
+
+    /* Support */
+    .addr { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: .6rem; align-items: center; padding: .55rem 0; }
+    .addr + .addr { border-top: 1px dashed var(--line); }
+    .addr .coin { color: var(--muted); font-size: .95rem; }
+    .addr code {
+      font-family: ui-monospace, "DejaVu Sans Mono", monospace; font-size: .82rem;
+      color: var(--ink-soft); overflow-wrap: anywhere; direction: ltr; text-align: left;
+    }
+    .copy {
+      display: inline-flex; align-items: center; gap: .35rem;
+      padding: .25rem .75rem; border-radius: 999px; font-size: .88rem;
+      background: transparent; border: 1px solid var(--line); color: var(--ink-soft);
+    }
+    .copy:hover { background: var(--gold-soft); border-color: var(--gold); }
+    .copy[data-done="true"] { color: var(--accent); border-color: var(--accent); }
+    .support-links { margin-top: .8rem; }
+
+    /* Images */
+    .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+    .figs img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); background: #fff; display: block; }
+
+    .site-foot { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 1rem 2rem; }
+
+    @media (max-width: 34rem) {
+      .group { grid-template-columns: 1fr; gap: .2rem; }
+      .addr { grid-template-columns: 1fr auto; }
+      .addr .coin { grid-column: 1 / -1; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+  </defs>
+</svg>
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="./" aria-label="Home">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="10" class="bm-bg"/>
+      <path d="M16 5l3.2 7.8L27 16l-7.8 3.2L16 27l-3.2-7.8L5 16l7.8-3.2z" class="bm-star"/>
+      <circle cx="16" cy="16" r="2.4" class="bm-bg"/>
+    </svg>
+    <span class="brand-name" dir="rtl">رضا حسین‌زاده</span>
+  </a>
+  <button class="icon-btn" id="btnTheme" title="Toggle light / dark" aria-label="Toggle light or dark theme">
+    <svg class="i"><use id="themeIcon" href="#i-moon"/></svg>
+  </button>
+</header>
+
+<main class="page">
+
+  <section class="card hero">
+    <h1 dir="rtl" lang="fa">رضا حسین‌زاده</h1>
+    <p class="en">Reza Hosseinzadeh</p>
+    <div class="orn"><i></i></div>
+    <ul class="ids">
+      <li dir="auto"><span aria-hidden="true">📿</span> مسلم · Muslim</li>
+      <li dir="auto"><span aria-hidden="true">🐺🌙</span> <span class="tr" lang="otk">𐱅𐰇𐰼𐰜</span> · Türk</li>
+      <li dir="auto"><span aria-hidden="true">🇮🇷</span> جمهوری اسلامی ایران · Islamic Republic of Iran</li>
+    </ul>
+  </section>
+
+  <section class="card about">
+    <h2>About</h2>
+    <p>
+      I was born in 2005 in <a href="https://en.wikipedia.org/wiki/Naghadeh">Naghadeh</a>, a small city in
+      <a href="https://en.wikipedia.org/wiki/West_Azerbaijan_province">West Azerbaijan province</a> of
+      <a href="https://en.wikipedia.org/wiki/Iran">I.R. Iran</a>, but most of my life has been spent in
+      <a href="https://en.wikipedia.org/wiki/Urmia">Urmia</a>, the center of the province. I studied Math and
+      Physics in high school and I'm now a mechanical engineering student at <a href="https://www.sbu.ac.ir">SBU</a>.
+      I am <a href="https://en.wikipedia.org/wiki/Muslims">Muslim</a> and
+      <a href="https://en.wikipedia.org/wiki/Shia_Islam">Shia</a>, and an
+      <a href="https://en.wikipedia.org/wiki/Azerbaijanis">Azerbaijani Turk</a>. I'm interested in
+      <a href="https://en.wikipedia.org/wiki/Tor_(network)">Tor</a>,
+      <a href="https://en.wikipedia.org/wiki/GNU">GNU</a>,
+      <a href="https://en.wikipedia.org/wiki/Copyleft">Copyleft</a>,
+      <a href="https://en.wikipedia.org/wiki/Free_software">Free Software</a>,
+      <a href="https://en.wikipedia.org/wiki/Philosophy">Philosophy</a>,
+      <a href="https://en.wikipedia.org/wiki/Mechanical_engineering">Mechanical Eng.</a>, and more.
+    </p>
+  </section>
+
+  <section class="card feature">
+    <div>
+      <h2 dir="rtl" lang="fa">گنجورند برخط</h2>
+      <p>A random poem from Ganjoor, with recitations.</p>
+    </div>
+    <a class="btn primary" href="./ganjoor/">
+      <svg class="i"><use href="#i-book"/></svg><span>Open Ganjoorand</span>
+    </a>
+  </section>
+
+  <section class="card">
+    <h2>Find me</h2>
+
+    <div class="group">
+      <h3>Contact</h3>
+      <ul class="chips">
+        <li><a href="mailto:rezahosseinzadeh@riseup.net">Email</a></li>
+        <li><a href="./files/GPG.asc">GPG key</a></li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h3>Social</h3>
+      <ul class="chips">
+        <li><a rel="me" href="https://mas.to/@rezaHoss">Mastodon</a></li>
+        <li><a href="https://t.me/abyatichand" dir="auto">ابیاتی چند</a></li>
+        <li><a href="https://matrix.to/#/@rezahoss:matrix.org">Matrix</a></li>
+        <li><a href="https://eitaa.com/s/HhhHoss" dir="auto">ایتا</a></li>
+        <li><a href="https://splus.ir/rezahoss" dir="auto">سروش</a></li>
+        <li><a href="https://pixelfed.social/RezaHoss">Pixelfed</a></li>
+        <li><a href="https://t.me/Rhodium103">Telegram</a></li>
+        <li><a href="https://www.linkedin.com/in/reza-hosseinzadeh-9b73b8255/">LinkedIn</a></li>
+        <li><a href="https://x.com/RezaHoss">Twitter (archived)</a></li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h3>Blogs</h3>
+      <ul class="chips">
+        <li><a href="https://text.tchncs.de/reza" dir="auto">بلاگ</a></li>
+        <li><a href="https://text.tchncs.de/reza/feed" dir="auto">خوراک بلاگ</a></li>
+        <li><a href="https://virgool.io/@RezaHosseinzadeh" dir="auto">ویرگول (بایگانی)</a></li>
+        <li><a href="https://rezahoss.medium.com/">Medium</a></li>
+      </ul>
+    </div>
+
+    <div class="group">
+      <h3>Other</h3>
+      <ul class="chips">
+        <li><a href="https://programming.dev/u/Reza">Lemmy</a></li>
+        <li><a href="https://framagit.org/RZHSSNZDH/">GitLab</a></li>
+        <li><a href="https://www.openstreetmap.org/user/RezaHosseinzadeh">OpenStreetMap</a></li>
+        <li><a href="https://github.com/RZHSSNZDH/">GitHub (archived)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Support me</h2>
+    <ul class="chips">
+      <li><a href="https://liberapay.com/rezahosseinzadeh/donate">Liberapay</a></li>
+      <li><a href="https://daramet.com/rhodium" dir="auto">دارمت</a></li>
+    </ul>
+    <div class="support-links">
+      <div class="addr">
+        <span class="coin">BTC</span>
+        <code>bc1qt3ypmyj4kdak9jk0dkej4prl9vv2dte9qy5xq9</code>
+        <button class="copy" type="button" data-copy="bc1qt3ypmyj4kdak9jk0dkej4prl9vv2dte9qy5xq9">
+          <svg class="i"><use href="#i-copy"/></svg><span>Copy</span>
+        </button>
+      </div>
+      <div class="addr">
+        <span class="coin">ETH, DAI, BNB, etc.</span>
+        <code>0x4f9f4F03B42c80A972c97131bF995845B283245F</code>
+        <button class="copy" type="button" data-copy="0x4f9f4F03B42c80A972c97131bF995845B283245F">
+          <svg class="i"><use href="#i-copy"/></svg><span>Copy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="figs">
+      <img src="./files/8values.png" alt="8values political test result" loading="lazy">
+      <img src="./files/compass.png" alt="Political compass result" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">rezahosseinzadeh.ir</footer>
+
+<script>
+  // Theme toggle (shares the "gj.theme" key with /ganjoor)
+  const root = document.documentElement;
+  const icon = document.getElementById("themeIcon");
+  const isDark = () =>
+    root.dataset.theme ? root.dataset.theme === "dark"
+                       : matchMedia("(prefers-color-scheme: dark)").matches;
+  const syncIcon = () => icon.setAttribute("href", isDark() ? "#i-sun" : "#i-moon");
+  syncIcon();
+  document.getElementById("btnTheme").addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("gj.theme", JSON.stringify(next)); } catch {}
+    syncIcon();
+  });
+
+  // Copy buttons for crypto addresses
+  document.querySelectorAll(".copy").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const text = btn.dataset.copy;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        const ta = Object.assign(document.createElement("textarea"), { value: text });
+        document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+      }
+      const label = btn.querySelector("span");
+      btn.dataset.done = "true"; label.textContent = "Copied";
+      setTimeout(() => { btn.dataset.done = "false"; label.textContent = "Copy"; }, 1600);
+    });
+  });
+</script>
+</body>
+</html>
