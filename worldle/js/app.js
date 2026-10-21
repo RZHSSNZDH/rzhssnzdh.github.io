@@ -179,14 +179,18 @@ export function boot() {
 
   function renderGuesses() {
     const frag = document.createDocumentFragment();
-    const last = (round?.guesses.length || 1) - 1;
-    round?.guesses.forEach((g, i) => {
+    const list = round?.guesses || [];
+    const last = list.length - 1;
+    // Newest guess first: the last guess sits at the top of the list.
+    for (let d = 0; d < list.length; d++) {
+      const i = list.length - 1 - d;
+      const g = list[i];
       const li = document.createElement("li");
       li.className = "guess";
       if (g.correct) li.classList.add("is-correct");
       if (g.isNeighbor) li.classList.add("is-neighbor");
       if (i !== last) li.classList.add("is-settled");
-      li.style.setProperty("--i", String(i));
+      li.style.setProperty("--i", String(d));
 
       const top = document.createElement("div");
       top.className = "guess-top";
@@ -233,7 +237,7 @@ export function boot() {
 
       li.append(top, meta);
       frag.append(li);
-    });
+    }
     el.guesses.replaceChildren(frag);
   }
 
@@ -388,6 +392,11 @@ export function boot() {
     el.giveUp.disabled = !playing;
     el.again.disabled = !db;
     el.priv.setAttribute("aria-pressed", String(privateMode));
+    const privLocked = !!round && !round.over && round.attempts > 0;
+    el.priv.disabled = privLocked;
+    el.priv.title = privLocked
+      ? "Private can only be toggled before your first guess"
+      : "Don't save this round";
 
     if (!round) {
       renderChips();
@@ -575,12 +584,14 @@ export function boot() {
     el.suggest.hidden = true;
     el.suggest.replaceChildren();
     suggestIdx = -1;
+    el.chips.hidden = false;
   }
 
   function showSuggest(list, typed) {
     suggestList = list;
     suggestIdx = -1;
     if (!list.length) return hideSuggest();
+    el.chips.hidden = true; // keep the guess circles out of the way while choices are open
     const frag = document.createDocumentFragment();
     list.forEach((name, i) => {
       const b = document.createElement("button");
@@ -706,6 +717,10 @@ export function boot() {
   });
 
   on(el.priv, "click", () => {
+    if (round && !round.over && round.attempts > 0) {
+      toast("Private can only be toggled before your first guess.");
+      return;
+    }
     privateMode = !privateMode;
     store.set("wl.private", privateMode);
     el.priv.setAttribute("aria-pressed", String(privateMode));

@@ -5,11 +5,11 @@
   },
   "Albania": {
     "coordinates": [41.153332, 20.168331],
-    "neighbors": ["Greece", "Italy", "Montenegro", "North Macedonia", "Kosovo"]
+    "neighbors": ["Greece", "Italy", "Montenegro", "North Macedonia"]
   },
   "Algeria": {
     "coordinates": [28.033886, 1.659626],
-    "neighbors": ["Italy", "Libya", "Mali", "Mauritania", "Morocco", "Niger", "Spain", "Tunisia", "Western Sahara"]
+    "neighbors": ["Italy", "Libya", "Mali", "Mauritania", "Morocco", "Niger", "Spain", "Tunisia"]
   },
   "Andorra": {
     "coordinates": [42.546245, 1.601554],
@@ -177,7 +177,7 @@
   },
   "Cyprus": {
     "coordinates": [35.126413, 33.429859],
-    "neighbors": ["Northern Cyprus", "Egypt", "Greece", "Israel", "Lebanon", "Syria", "Turkey"]
+    "neighbors": ["Egypt", "Greece", "Lebanon", "Syria", "Turkey"]
   },
   "Czech Republic": {
     "coordinates": [49.817492, 15.472962],
@@ -189,7 +189,7 @@
   },
   "Djibouti": {
     "coordinates": [11.825138, 42.590275],
-    "neighbors": ["Eritrea", "Ethiopia", "Somaliland", "Yemen"]
+    "neighbors": ["Eritrea", "Ethiopia", "Yemen"]
   },
   "Dominica": {
     "coordinates": [15.415, -61.371],
@@ -205,7 +205,7 @@
   },
   "Egypt": {
     "coordinates": [26.820553, 30.802498],
-    "neighbors": ["Cyprus", "Greece", "Israel", "Jordan", "Libya", "Saudi Arabia", "Sudan", "Palestine"]
+    "neighbors": ["Cyprus", "Greece", "Jordan", "Libya", "Saudi Arabia", "Sudan", "Palestine"]
   },
   "El Salvador": {
     "coordinates": [13.794185, -88.89653],
@@ -229,7 +229,7 @@
   },
   "Ethiopia": {
     "coordinates": [9.145, 40.489673],
-    "neighbors": ["Djibouti", "Eritrea", "Kenya", "Somalia", "Somaliland", "South Sudan", "Sudan"]
+    "neighbors": ["Djibouti", "Eritrea", "Kenya", "Somalia", "South Sudan", "Sudan"]
   },
   "Fiji": {
     "coordinates": [-17.713371, 178.065032],
@@ -253,7 +253,7 @@
   },
   "Georgia": {
     "coordinates": [42.315407, 43.356892],
-    "neighbors": ["Abkhazia", "Armenia", "Azerbaijan", "Russia", "South Ossetia", "Turkey"]
+    "neighbors": ["Armenia", "Azerbaijan", "Russia", "Turkey"]
   },
   "Germany": {
     "coordinates": [51.165691, 10.451526],
@@ -325,7 +325,7 @@
   },
   "Palestine": {
     "coordinates": [31.046051, 34.851612],
-    "neighbors": ["Egypt", "Israel", "Jordan"]
+    "neighbors": ["Egypt", "Jordan"]
   },
   "Italy": {
     "coordinates": [41.87194, 12.56738],
@@ -341,7 +341,7 @@
   },
   "Jordan": {
     "coordinates": [30.585164, 36.238414],
-    "neighbors": ["Egypt", "Iraq", "Israel", "Saudi Arabia", "Syria", "Palestine"]
+    "neighbors": ["Egypt", "Iraq", "Saudi Arabia", "Syria", "Palestine"]
   },
   "Kazakhstan": {
     "coordinates": [48.019573, 66.923684],
@@ -353,7 +353,7 @@
   },
   "Kiribati": {
     "coordinates": [1.870915, -157.363026],
-    "neighbors": []
+    "neighbors": ["Tuvalu"]
   },
   "Kuwait": {
     "coordinates": [29.31166, 47.481766],
@@ -373,7 +373,7 @@
   },
   "Lebanon": {
     "coordinates": [33.854721, 35.862285],
-    "neighbors": ["Cyprus", "Israel", "Syria"]
+    "neighbors": ["Cyprus", "Syria"]
   },
   "Lesotho": {
     "coordinates": [-29.609988, 28.233608],
@@ -429,7 +429,7 @@
   },
   "Mauritania": {
     "coordinates": [21.00789, -10.940835],
-    "neighbors": ["Algeria", "Cape Verde", "Mali", "Senegal", "Western Sahara"]
+    "neighbors": ["Algeria", "Cape Verde", "Mali", "Senegal"]
   },
   "Mauritius": {
     "coordinates": [-20.348404, 57.552152],
@@ -441,11 +441,11 @@
   },
   "Micronesia": {
     "coordinates": [7.425554, 150.550812],
-    "neighbors": []
+    "neighbors": ["Palau", "Papua New Guinea"]
   },
   "Moldova": {
     "coordinates": [47.411631, 28.369885],
-    "neighbors": ["Romania", "Transnistria", "Ukraine"]
+    "neighbors": ["Romania", "Ukraine"]
   },
   "Monaco": {
     "coordinates": [43.738417, 7.424615],
@@ -457,11 +457,11 @@
   },
   "Montenegro": {
     "coordinates": [42.708678, 19.37439],
-    "neighbors": ["Albania", "Bosnia and Herzegovina", "Croatia", "Italy", "Serbia", "Kosovo"]
+    "neighbors": ["Albania", "Bosnia and Herzegovina", "Croatia", "Italy", "Serbia"]
   },
   "Morocco": {
     "coordinates": [31.791702, -7.09262],
-    "neighbors": ["Algeria", "Portugal", "Spain", "Western Sahara"]
+    "neighbors": ["Algeria", "Portugal", "Spain"]
   },
   "Mozambique": {
     "coordinates": [-18.665695, 35.529562],
@@ -509,7 +509,7 @@
   },
   "North Macedonia": {
     "coordinates": [41.608635, 21.745275],
-    "neighbors": ["Albania", "Bulgaria", "Greece", "Serbia", "Kosovo"]
+    "neighbors": ["Albania", "Bulgaria", "Greece", "Serbia"]
   },
   "Norway": {
     "coordinates": [60.472024, 8.468946],
@@ -565,7 +565,7 @@
   },
   "Russia": {
     "coordinates": [61.52401, 105.318756],
-    "neighbors": ["Abkhazia", "Azerbaijan", "Belarus", "Bulgaria", "China", "Estonia", "Finland", "Georgia", "Japan", "Kazakhstan", "North Korea", "Latvia", "Lithuania", "Mongolia", "Norway", "Poland", "Romania", "South Ossetia", "Sweden", "Turkey", "Ukraine", "United States"]
+    "neighbors": ["Azerbaijan", "Belarus", "Bulgaria", "China", "Estonia", "Finland", "Georgia", "Japan", "Kazakhstan", "North Korea", "Latvia", "Lithuania", "Mongolia", "Norway", "Poland", "Romania", "Sweden", "Turkey", "Ukraine", "United States"]
   },
   "Rwanda": {
     "coordinates": [-1.940278, 29.873888],
@@ -585,7 +585,7 @@
   },
   "Samoa": {
     "coordinates": [-13.759029, -172.104629],
-    "neighbors": []
+    "neighbors": ["Tonga"]
   },
   "San Marino": {
     "coordinates": [43.94236, 12.457777],
@@ -605,7 +605,7 @@
   },
   "Serbia": {
     "coordinates": [44.016521, 21.005859],
-    "neighbors": ["Bosnia and Herzegovina", "Bulgaria", "Croatia", "Hungary", "Montenegro", "North Macedonia", "Romania", "Kosovo"]
+    "neighbors": ["Bosnia and Herzegovina", "Bulgaria", "Croatia", "Hungary", "Montenegro", "North Macedonia", "Romania"]
   },
   "Seychelles": {
     "coordinates": [-4.679574, 55.491977],
@@ -629,11 +629,11 @@
   },
   "Solomon Islands": {
     "coordinates": [-9.64571, 160.156194],
-    "neighbors": ["Fiji", "Papua New Guinea", "Vanuatu"]
+    "neighbors": ["Australia", "Fiji", "Papua New Guinea", "Vanuatu"]
   },
   "Somalia": {
     "coordinates": [5.152149, 46.199616],
-    "neighbors": ["Ethiopia", "Kenya", "Somaliland", "Yemen"]
+    "neighbors": ["Ethiopia", "Kenya", "Yemen"]
   },
   "South Africa": {
     "coordinates": [-30.559482, 22.937506],
@@ -649,7 +649,7 @@
   },
   "Spain": {
     "coordinates": [40.463667, -3.74922],
-    "neighbors": ["Algeria", "Andorra", "France", "Italy", "Morocco", "Portugal", "Western Sahara"]
+    "neighbors": ["Algeria", "Andorra", "France", "Italy", "Morocco", "Portugal"]
   },
   "Sri Lanka": {
     "coordinates": [7.873054, 80.771797],
@@ -673,7 +673,7 @@
   },
   "Syria": {
     "coordinates": [34.802075, 38.996815],
-    "neighbors": ["Cyprus", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey", "Northern Cyprus"]
+    "neighbors": ["Cyprus", "Iraq", "Jordan", "Lebanon", "Turkey"]
   },
   "Taiwan": {
     "coordinates": [23.69781, 120.960515],
@@ -713,7 +713,7 @@
   },
   "Turkey": {
     "coordinates": [38.963745, 35.243322],
-    "neighbors": ["Abkhazia", "Armenia", "Azerbaijan", "Bulgaria", "Cyprus", "Georgia", "Greece", "Iran", "Iraq", "Russia", "Syria", "Ukraine", "Northern Cyprus"]
+    "neighbors": ["Armenia", "Azerbaijan", "Bulgaria", "Cyprus", "Georgia", "Greece", "Iran", "Iraq", "Russia", "Syria", "Ukraine"]
   },
   "Turkmenistan": {
     "coordinates": [38.969719, 59.556278],
@@ -729,7 +729,7 @@
   },
   "Ukraine": {
     "coordinates": [48.379433, 31.16558],
-    "neighbors": ["Belarus", "Bulgaria", "Hungary", "Moldova", "Poland", "Romania", "Russia", "Slovakia", "Transnistria", "Turkey"]
+    "neighbors": ["Belarus", "Bulgaria", "Hungary", "Moldova", "Poland", "Romania", "Russia", "Slovakia", "Turkey"]
   },
   "United Arab Emirates": {
     "coordinates": [23.424076, 53.847818],
@@ -769,7 +769,7 @@
   },
   "Yemen": {
     "coordinates": [15.552727, 48.516388],
-    "neighbors": ["Djibouti", "Eritrea", "Somaliland", "Oman", "Saudi Arabia", "Somalia"]
+    "neighbors": ["Djibouti", "Eritrea", "Oman", "Saudi Arabia", "Somalia"]
   },
   "Zambia": {
     "coordinates": [-13.133897, 27.849332],
