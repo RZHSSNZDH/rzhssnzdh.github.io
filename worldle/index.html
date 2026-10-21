@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Guess the country in ten tries. Distance and direction after every guess.">
+  <title>Worldle</title>
+  <meta name="theme-color" content="#f4eee2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1018" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Worldle">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.dataset.worldleStatic = "1";
+    try {
+      const t = JSON.parse(localStorage.getItem("wl.theme") || "null");
+      if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      const sizes = [1.15, 1.3, 1.5, 1.7, 1.95, 2.3];
+      const i = JSON.parse(localStorage.getItem("wl.size") || "2");
+      if (typeof i === "number" && sizes[i]) {
+        document.documentElement.style.setProperty("--verse-size", sizes[i] + "rem");
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-5"/><path d="M13 17V8"/><path d="M18 17v-8"/></symbol>
+    <symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 21V4"/><path d="M4 4h12l-2.2 4L16 12H4"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m14.8 9.2-1.3 4.3-4.3 1.3 1.3-4.3Z"/></symbol>
+  </defs>
+</svg>
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="brand" href="./" aria-label="Worldle">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <rect width="32" height="32" rx="10" class="bm-bg"/>
+      <path class="bm-star" d="M16 6.2 18.15 13.7 16 15.2 13.85 13.7Z"/>
+      <path class="bm-star" opacity=".85" d="M16 25.8 13.85 18.3 16 16.8 18.15 18.3Z"/>
+      <path class="bm-star" opacity=".7" d="M6.2 16 13.7 13.85 15.2 16 13.7 18.15Z"/>
+      <path class="bm-star" opacity=".7" d="M25.8 16 18.3 18.15 16.8 16 18.3 13.85Z"/>
+      <circle cx="16" cy="16" r="1.7" class="bm-bg"/>
+    </svg>
+    <span class="brand-name">Worldle</span>
+  </a>
+
+  <div class="tools">
+    <button class="icon-btn" id="btnSmaller" title="Smaller text" aria-label="Smaller text">
+      <svg class="i"><use href="#i-type"/></svg><small>−</small>
+    </button>
+    <button class="icon-btn" id="btnBigger" title="Larger text" aria-label="Larger text">
+      <svg class="i"><use href="#i-type"/></svg><small>+</small>
+    </button>
+    <button class="icon-btn" id="btnTheme" title="Dark or light theme" aria-label="Toggle theme">
+      <svg class="i"><use id="themeIcon" href="#i-moon"/></svg>
+    </button>
+    <button class="icon-btn" id="btnLibrary" title="Statistics and history" aria-label="Statistics and history">
+      <svg class="i"><use href="#i-chart"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero">
+    <p class="eyebrow">Geography · ten guesses</p>
+    <h1>Name the country</h1>
+    <p class="lead">Type a country in English. Each guess shows how far away you are and which way to head. A neighbor only gives you the direction.</p>
+
+    <form id="searchForm" class="search" autocomplete="off" role="search">
+      <svg class="i search-icon"><use href="#i-search"/></svg>
+      <input id="q" type="text" spellcheck="false" autocapitalize="words" autocomplete="off"
+             enterkeyhint="go" maxlength="80"
+             placeholder="France, Japan, Brazil…"
+             aria-label="Country name">
+      <button class="btn primary" type="submit" id="goBtn">Guess</button>
+      <div id="suggest" class="suggest" hidden></div>
+    </form>
+
+    <div id="chips" class="chips" aria-label="Guesses used"></div>
+  </section>
+
+  <p id="notice" class="notice" role="status" hidden></p>
+
+  <article id="poem" class="poem-card is-loading" aria-busy="true">
+    <div class="skeleton" aria-hidden="true">
+      <span class="sk sk-s"></span><span class="sk sk-l"></span>
+      <span class="sk-orn"></span>
+      <span class="sk sk-m"></span><span class="sk sk-m"></span>
+      <span class="sk sk-m"></span><span class="sk sk-m"></span>
+    </div>
+
+    <div class="empty">
+      <div class="orn"><i></i></div>
+      <p>Loading the map of countries.</p>
+    </div>
+
+    <div class="poem-content" hidden>
+      <header class="poem-head">
+        <p class="kicker" id="kicker"></p>
+        <h2 class="poem-title" id="poemTitle"></h2>
+        <div class="orn"><i></i></div>
+      </header>
+      <p class="hint-line" id="hintLine" aria-live="polite"></p>
+      <ol class="verses" id="guesses"></ol>
+      <div id="plot" class="plot" hidden></div>
+      <footer class="poem-foot">
+        <div class="orn small"><i></i></div>
+        <p class="metre" id="metre"></p>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<div class="dock">
+  <div class="dock-inner">
+    <div class="actions">
+      <button class="btn primary" id="btnAgain" type="button" title="New country (R)">
+        <svg class="i"><use href="#i-shuffle"/></svg><span>New game</span>
+      </button>
+      <button class="btn ghost" id="btnGiveUp" type="button" title="Reveal the answer">
+        <svg class="i"><use href="#i-flag"/></svg><span class="lbl">Give up</span>
+      </button>
+      <button class="btn ghost" id="btnCopy" type="button" title="Copy the result">
+        <svg class="i"><use href="#i-copy"/></svg><span class="lbl">Copy</span>
+      </button>
+      <button class="btn ghost" id="btnPrivate" type="button" aria-pressed="false" title="Don't save this round">
+        <svg class="i"><use href="#i-eye"/></svg><span class="lbl">Private</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<dialog id="drawer" class="drawer">
+  <div class="drawer-head">
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tabStats" type="button" aria-selected="true">Statistics</button>
+      <button role="tab" id="tabHist" type="button" aria-selected="false">History</button>
+    </div>
+    <button class="icon-btn" id="drawerClose" type="button" aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <div id="drawerBody" class="drawer-body"></div>
+  <div class="drawer-foot"><button class="btn ghost small" id="clearBtn" type="button">Clear history</button></div>
+</dialog>
+
+<div id="toasts" class="toasts" aria-live="polite"></div>
+
+<footer class="site-foot">
+  A web rewrite of Worldle
+  · country list bundled with the game
+  · GPL-3.0-or-later
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

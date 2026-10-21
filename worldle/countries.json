@@ -1,0 +1,782 @@
+{
+  "Afghanistan": {
+    "coordinates": [33.93911, 67.709953],
+    "neighbors": ["China", "Iran", "Pakistan", "Tajikistan", "Turkmenistan", "Uzbekistan"]
+  },
+  "Albania": {
+    "coordinates": [41.153332, 20.168331],
+    "neighbors": ["Greece", "Italy", "Montenegro", "North Macedonia", "Kosovo"]
+  },
+  "Algeria": {
+    "coordinates": [28.033886, 1.659626],
+    "neighbors": ["Italy", "Libya", "Mali", "Mauritania", "Morocco", "Niger", "Spain", "Tunisia", "Western Sahara"]
+  },
+  "Andorra": {
+    "coordinates": [42.546245, 1.601554],
+    "neighbors": ["France", "Spain"]
+  },
+  "Angola": {
+    "coordinates": [-11.202692, 17.873887],
+    "neighbors": ["Democratic Republic of the Congo", "Republic of the Congo", "Namibia", "Zambia"]
+  },
+  "Antigua and Barbuda": {
+    "coordinates": [17.060816, -61.796428],
+    "neighbors": ["France", "Saint Kitts and Nevis"]
+  },
+  "Argentina": {
+    "coordinates": [-38.416097, -63.616672],
+    "neighbors": ["Bolivia", "Brazil", "Chile", "Paraguay", "Uruguay"]
+  },
+  "Armenia": {
+    "coordinates": [40.069099, 45.038189],
+    "neighbors": ["Azerbaijan", "Georgia", "Iran", "Turkey"]
+  },
+  "Australia": {
+    "coordinates": [-25.274398, 133.775136],
+    "neighbors": ["East Timor", "Indonesia", "New Zealand", "Papua New Guinea", "Solomon Islands"]
+  },
+  "Austria": {
+    "coordinates": [47.516231, 14.550072],
+    "neighbors": ["Czech Republic", "Germany", "Hungary", "Italy", "Liechtenstein", "Slovakia", "Slovenia", "Switzerland"]
+  },
+  "Azerbaijan": {
+    "coordinates": [40.143105, 47.576927],
+    "neighbors": ["Armenia", "Georgia", "Iran", "Kazakhstan", "Russia", "Turkey", "Turkmenistan"]
+  },
+  "Bahamas": {
+    "coordinates": [25.03428, -77.39628],
+    "neighbors": ["Cuba", "Haiti", "United States"]
+  },
+  "Bahrain": {
+    "coordinates": [25.930414, 50.637772],
+    "neighbors": ["Iran", "Qatar", "Saudi Arabia"]
+  },
+  "Bangladesh": {
+    "coordinates": [23.684994, 90.356331],
+    "neighbors": ["Myanmar", "India"]
+  },
+  "Barbados": {
+    "coordinates": [13.193887, -59.543198],
+    "neighbors": ["France", "Guyana", "Saint Lucia", "Saint Vincent and the Grenadines", "Trinidad and Tobago", "Venezuela"]
+  },
+  "Belarus": {
+    "coordinates": [53.709807, 27.953389],
+    "neighbors": ["Latvia", "Lithuania", "Poland", "Russia", "Ukraine"]
+  },
+  "Belgium": {
+    "coordinates": [50.503887, 4.469936],
+    "neighbors": ["France", "Germany", "Luxembourg", "Netherlands", "United Kingdom"]
+  },
+  "Belize": {
+    "coordinates": [17.189877, -88.49765],
+    "neighbors": ["Guatemala", "Honduras", "Mexico"]
+  },
+  "Benin": {
+    "coordinates": [9.30769, 2.315834],
+    "neighbors": ["Burkina Faso", "Niger", "Nigeria", "Togo"]
+  },
+  "Bhutan": {
+    "coordinates": [27.514162, 90.433601],
+    "neighbors": ["China", "India"]
+  },
+  "Bolivia": {
+    "coordinates": [-16.290154, -63.588653],
+    "neighbors": ["Argentina", "Brazil", "Chile", "Paraguay", "Peru"]
+  },
+  "Bosnia and Herzegovina": {
+    "coordinates": [43.915886, 17.679076],
+    "neighbors": ["Croatia", "Montenegro", "Serbia"]
+  },
+  "Botswana": {
+    "coordinates": [-22.328474, 24.684866],
+    "neighbors": ["Namibia", "South Africa", "Zambia", "Zimbabwe"]
+  },
+  "Brazil": {
+    "coordinates": [-14.235004, -51.92528],
+    "neighbors": ["Argentina", "Bolivia", "Colombia", "France", "Guyana", "Paraguay", "Peru", "Suriname", "Uruguay", "Venezuela"]
+  },
+  "Brunei": {
+    "coordinates": [4.535277, 114.727669],
+    "neighbors": ["China", "Malaysia", "Philippines", "Taiwan", "Vietnam"]
+  },
+  "Bulgaria": {
+    "coordinates": [42.733883, 25.48583],
+    "neighbors": ["Greece", "North Macedonia", "Romania", "Serbia", "Turkey", "Russia", "Ukraine"]
+  },
+  "Burkina Faso": {
+    "coordinates": [12.238333, -1.561593],
+    "neighbors": ["Benin", "Côte d'Ivoire", "Ghana", "Mali", "Niger", "Togo"]
+  },
+  "Burundi": {
+    "coordinates": [-3.373056, 29.918886],
+    "neighbors": ["Democratic Republic of the Congo", "Rwanda", "Tanzania"]
+  },
+  "Cabo Verde": {
+    "coordinates": [16.002082, -24.013197],
+    "neighbors": ["The Gambia", "Mauritania", "Senegal"]
+  },
+  "Cambodia": {
+    "coordinates": [12.565679, 104.990963],
+    "neighbors": ["Laos", "Thailand", "Vietnam"]
+  },
+  "Cameroon": {
+    "coordinates": [7.369722, 12.354722],
+    "neighbors": ["Central African Republic", "Chad", "Republic of the Congo", "Equatorial Guinea", "Gabon", "Nigeria"]
+  },
+  "Canada": {
+    "coordinates": [56.130366, -106.346771],
+    "neighbors": ["United States"]
+  },
+  "Central African Republic": {
+    "coordinates": [6.611111, 20.939444],
+    "neighbors": ["Cameroon", "Chad", "Democratic Republic of the Congo", "Republic of the Congo", "South Sudan", "Sudan"]
+  },
+  "Chad": {
+    "coordinates": [15.454166, 18.732207],
+    "neighbors": ["Cameroon", "Central African Republic", "Libya", "Niger", "Nigeria", "Sudan"]
+  },
+  "Chile": {
+    "coordinates": [-35.675147, -71.542969],
+    "neighbors": ["Argentina", "Bolivia", "Peru"]
+  },
+  "China": {
+    "coordinates": [35.86166, 104.195397],
+    "neighbors": ["Afghanistan", "Bhutan", "Brunei", "India", "Indonesia", "Japan", "Kazakhstan", "North Korea", "South Korea", "Kyrgyzstan", "Laos", "Malaysia", "Mongolia", "Myanmar", "Nepal", "Pakistan", "Philippines", "Russia", "Tajikistan", "Vietnam", "Taiwan"]
+  },
+  "Colombia": {
+    "coordinates": [4.570868, -74.297333],
+    "neighbors": ["Brazil", "Costa Rica", "Dominican Republic", "Ecuador", "Haiti", "Jamaica", "Nicaragua", "Panama", "Peru", "Venezuela"]
+  },
+  "Comoros": {
+    "coordinates": [-11.875001, 43.872219],
+    "neighbors": ["France", "Madagascar", "Mozambique", "Seychelles", "Tanzania"]
+  },
+  "Congo (Republic of the)": {
+    "coordinates": [-0.228021, 15.827659],
+    "neighbors": ["Angola", "Cameroon", "Central African Republic", "Democratic Republic of the Congo", "Gabon"]
+  },
+  "Congo (Democratic Republic of the)": {
+    "coordinates": [-4.038333, 21.758664],
+    "neighbors": ["Angola", "Burundi", "Central African Republic", "Republic of the Congo", "Rwanda", "South Sudan", "Tanzania", "Uganda", "Zambia"]
+  },
+  "Costa Rica": {
+    "coordinates": [9.748917, -83.753428],
+    "neighbors": ["Colombia", "Ecuador", "Nicaragua", "Panama"]
+  },
+  "Côte d'Ivoire": {
+    "coordinates": [7.539989, -5.54708],
+    "neighbors": ["Burkina Faso", "Ghana", "Guinea", "Liberia", "Mali"]
+  },
+  "Croatia": {
+    "coordinates": [45.1, 15.2],
+    "neighbors": ["Bosnia and Herzegovina", "Hungary", "Italy", "Montenegro", "Serbia", "Slovenia"]
+  },
+  "Cuba": {
+    "coordinates": [21.521757, -77.781167],
+    "neighbors": ["Bahamas", "Haiti", "Honduras", "Jamaica", "Mexico", "United States"]
+  },
+  "Cyprus": {
+    "coordinates": [35.126413, 33.429859],
+    "neighbors": ["Northern Cyprus", "Egypt", "Greece", "Israel", "Lebanon", "Syria", "Turkey"]
+  },
+  "Czech Republic": {
+    "coordinates": [49.817492, 15.472962],
+    "neighbors": ["Austria", "Germany", "Poland", "Slovakia"]
+  },
+  "Denmark": {
+    "coordinates": [56.26392, 9.501785],
+    "neighbors": ["Germany", "Norway", "Poland", "Sweden", "United Kingdom"]
+  },
+  "Djibouti": {
+    "coordinates": [11.825138, 42.590275],
+    "neighbors": ["Eritrea", "Ethiopia", "Somaliland", "Yemen"]
+  },
+  "Dominica": {
+    "coordinates": [15.415, -61.371],
+    "neighbors": ["France", "Venezuela"]
+  },
+  "Dominican Republic": {
+    "coordinates": [18.735693, -70.162651],
+    "neighbors": ["Colombia", "Haiti", "Venezuela"]
+  },
+  "Ecuador": {
+    "coordinates": [-1.831239, -78.183406],
+    "neighbors": ["Colombia", "Costa Rica", "Peru"]
+  },
+  "Egypt": {
+    "coordinates": [26.820553, 30.802498],
+    "neighbors": ["Cyprus", "Greece", "Israel", "Jordan", "Libya", "Saudi Arabia", "Sudan", "Palestine"]
+  },
+  "El Salvador": {
+    "coordinates": [13.794185, -88.89653],
+    "neighbors": ["Guatemala", "Honduras", "Nicaragua"]
+  },
+  "Equatorial Guinea": {
+    "coordinates": [1.650801, 10.267895],
+    "neighbors": ["Cameroon", "Gabon", "Nigeria", "São Tomé and Príncipe"]
+  },
+  "Eritrea": {
+    "coordinates": [15.179384, 39.782334],
+    "neighbors": ["Djibouti", "Saudi Arabia", "Sudan", "Ethiopia", "Yemen"]
+  },
+  "Estonia": {
+    "coordinates": [58.595272, 25.013607],
+    "neighbors": ["Finland", "Latvia", "Russia", "Sweden"]
+  },
+  "Eswatini": {
+    "coordinates": [-26.522503, 31.465866],
+    "neighbors": ["Mozambique", "South Africa"]
+  },
+  "Ethiopia": {
+    "coordinates": [9.145, 40.489673],
+    "neighbors": ["Djibouti", "Eritrea", "Kenya", "Somalia", "Somaliland", "South Sudan", "Sudan"]
+  },
+  "Fiji": {
+    "coordinates": [-17.713371, 178.065032],
+    "neighbors": ["New Zealand", "Solomon Islands", "Tonga", "Tuvalu", "Vanuatu"]
+  },
+  "Finland": {
+    "coordinates": [61.92411, 25.748151],
+    "neighbors": ["Estonia", "Norway", "Russia", "Sweden"]
+  },
+  "France": {
+    "coordinates": [46.227638, 2.213749],
+    "neighbors": ["Andorra", "Antigua and Barbuda", "Barbados", "Belgium", "Brazil", "Comoros", "Dominica", "Germany", "Italy", "Luxembourg", "Madagascar", "Mauritius", "Monaco", "Saint Lucia", "Spain", "Switzerland", "Suriname", "United Kingdom", "Venezuela"]
+  },
+  "Gabon": {
+    "coordinates": [-0.803689, 11.609444],
+    "neighbors": ["Cameroon", "Republic of the Congo", "Equatorial Guinea", "São Tomé and Príncipe"]
+  },
+  "Gambia": {
+    "coordinates": [13.443182, -15.310139],
+    "neighbors": ["Cape Verde", "Senegal"]
+  },
+  "Georgia": {
+    "coordinates": [42.315407, 43.356892],
+    "neighbors": ["Abkhazia", "Armenia", "Azerbaijan", "Russia", "South Ossetia", "Turkey"]
+  },
+  "Germany": {
+    "coordinates": [51.165691, 10.451526],
+    "neighbors": ["Austria", "Belgium", "Czech Republic", "Denmark", "France", "Luxembourg", "Netherlands", "Poland", "Sweden", "Switzerland", "United Kingdom"]
+  },
+  "Ghana": {
+    "coordinates": [7.946527, -1.023194],
+    "neighbors": ["Burkina Faso", "Côte d'Ivoire", "Togo"]
+  },
+  "Greece": {
+    "coordinates": [39.074208, 21.824312],
+    "neighbors": ["Albania", "Bulgaria", "Cyprus", "Egypt", "Italy", "Libya", "North Macedonia", "Turkey"]
+  },
+  "Grenada": {
+    "coordinates": [12.262776, -61.604171],
+    "neighbors": ["Saint Vincent and the Grenadines", "Trinidad and Tobago", "Venezuela"]
+  },
+  "Guatemala": {
+    "coordinates": [15.783471, -90.230759],
+    "neighbors": ["Belize", "El Salvador", "Honduras", "Mexico"]
+  },
+  "Guinea": {
+    "coordinates": [9.945587, -9.696645],
+    "neighbors": ["Côte d'Ivoire", "Guinea-Bissau", "Liberia", "Mali", "Senegal", "Sierra Leone"]
+  },
+  "Guinea-Bissau": {
+    "coordinates": [11.803749, -15.180413],
+    "neighbors": ["Guinea", "Senegal"]
+  },
+  "Guyana": {
+    "coordinates": [4.860416, -58.93018],
+    "neighbors": ["Barbados", "Brazil", "Suriname", "Trinidad and Tobago", "Venezuela"]
+  },
+  "Haiti": {
+    "coordinates": [18.971187, -72.285215],
+    "neighbors": ["Bahamas", "Colombia", "Cuba", "Dominican Republic", "Jamaica"]
+  },
+  "Honduras": {
+    "coordinates": [15.199999, -86.241905],
+    "neighbors": ["Belize", "Cuba", "El Salvador", "Guatemala", "Jamaica", "Mexico", "Nicaragua"]
+  },
+  "Hungary": {
+    "coordinates": [47.162494, 19.503304],
+    "neighbors": ["Austria", "Croatia", "Romania", "Serbia", "Slovakia", "Slovenia", "Ukraine"]
+  },
+  "Iceland": {
+    "coordinates": [64.963051, -19.020835],
+    "neighbors": []
+  },
+  "India": {
+    "coordinates": [20.593684, 78.96288],
+    "neighbors": ["Bangladesh", "Bhutan", "China", "Indonesia", "Maldives", "Myanmar", "Nepal", "Pakistan", "Sri Lanka", "Thailand"]
+  },
+  "Indonesia": {
+    "coordinates": [-0.789275, 113.921327],
+    "neighbors": ["Australia", "China", "East Timor", "India", "Malaysia", "Palau", "Papua New Guinea", "Philippines", "Singapore", "Taiwan", "Thailand", "Vietnam"]
+  },
+  "Iran": {
+    "coordinates": [32.427908, 53.688046],
+    "neighbors": ["Afghanistan", "Armenia", "Azerbaijan", "Bahrain", "Iraq", "Kuwait", "Oman", "Pakistan", "Qatar", "Saudi Arabia", "Turkey", "Turkmenistan", "United Arab Emirates"]
+  },
+  "Iraq": {
+    "coordinates": [33.223191, 43.679291],
+    "neighbors": ["Iran", "Jordan", "Kuwait", "Saudi Arabia", "Syria", "Turkey"]
+  },
+  "Ireland": {
+    "coordinates": [53.41291, -8.24389],
+    "neighbors": ["United Kingdom"]
+  },
+  "Palestine": {
+    "coordinates": [31.046051, 34.851612],
+    "neighbors": ["Egypt", "Israel", "Jordan"]
+  },
+  "Italy": {
+    "coordinates": [41.87194, 12.56738],
+    "neighbors": ["Albania", "Algeria", "Austria", "Croatia", "France", "Greece", "Libya", "Malta", "Montenegro", "San Marino", "Slovenia", "Spain", "Switzerland", "Tunisia", "Vatican City"]
+  },
+  "Jamaica": {
+    "coordinates": [18.109581, -77.297508],
+    "neighbors": ["Colombia", "Cuba", "Haiti", "Honduras", "Nicaragua"]
+  },
+  "Japan": {
+    "coordinates": [36.204824, 138.252924],
+    "neighbors": ["China", "South Korea", "North Korea", "Philippines", "Russia", "Taiwan"]
+  },
+  "Jordan": {
+    "coordinates": [30.585164, 36.238414],
+    "neighbors": ["Egypt", "Iraq", "Israel", "Saudi Arabia", "Syria", "Palestine"]
+  },
+  "Kazakhstan": {
+    "coordinates": [48.019573, 66.923684],
+    "neighbors": ["Azerbaijan", "China", "Kyrgyzstan", "Russia", "Turkmenistan", "Uzbekistan"]
+  },
+  "Kenya": {
+    "coordinates": [-0.023559, 37.906193],
+    "neighbors": ["Ethiopia", "Somalia", "South Sudan", "Tanzania", "Uganda"]
+  },
+  "Kiribati": {
+    "coordinates": [1.870915, -157.363026],
+    "neighbors": []
+  },
+  "Kuwait": {
+    "coordinates": [29.31166, 47.481766],
+    "neighbors": ["Iran", "Iraq", "Saudi Arabia"]
+  },
+  "Kyrgyzstan": {
+    "coordinates": [41.20438, 74.766098],
+    "neighbors": ["China", "Kazakhstan", "Tajikistan", "Uzbekistan"]
+  },
+  "Laos": {
+    "coordinates": [19.85627, 102.495496],
+    "neighbors": ["Myanmar", "Cambodia", "China", "Thailand", "Vietnam"]
+  },
+  "Latvia": {
+    "coordinates": [56.879635, 24.603189],
+    "neighbors": ["Belarus", "Estonia", "Lithuania", "Russia", "Sweden"]
+  },
+  "Lebanon": {
+    "coordinates": [33.854721, 35.862285],
+    "neighbors": ["Cyprus", "Israel", "Syria"]
+  },
+  "Lesotho": {
+    "coordinates": [-29.609988, 28.233608],
+    "neighbors": ["South Africa"]
+  },
+  "Liberia": {
+    "coordinates": [6.428055, -9.429499],
+    "neighbors": ["Côte d'Ivoire", "Guinea", "Sierra Leone"]
+  },
+  "Libya": {
+    "coordinates": [26.3351, 17.228331],
+    "neighbors": ["Algeria", "Chad", "Egypt", "Greece", "Italy", "Malta", "Niger", "Sudan", "Tunisia"]
+  },
+  "Liechtenstein": {
+    "coordinates": [47.166, 9.555373],
+    "neighbors": ["Austria", "Switzerland"]
+  },
+  "Lithuania": {
+    "coordinates": [55.169438, 23.881275],
+    "neighbors": ["Belarus", "Latvia", "Poland", "Russia", "Sweden"]
+  },
+  "Luxembourg": {
+    "coordinates": [49.815273, 6.129583],
+    "neighbors": ["Belgium", "France", "Germany"]
+  },
+  "Madagascar": {
+    "coordinates": [-18.766947, 46.869107],
+    "neighbors": ["Comoros", "France", "Mauritius", "Mozambique", "Seychelles"]
+  },
+  "Malawi": {
+    "coordinates": [-13.254308, 34.301525],
+    "neighbors": ["Mozambique", "Tanzania", "Zambia"]
+  },
+  "Malaysia": {
+    "coordinates": [4.210484, 101.975766],
+    "neighbors": ["Brunei", "China", "Indonesia", "Philippines", "Singapore", "Thailand", "Vietnam", "Taiwan"]
+  },
+  "Maldives": {
+    "coordinates": [3.202778, 73.22068],
+    "neighbors": ["India", "Sri Lanka"]
+  },
+  "Mali": {
+    "coordinates": [17.570692, -3.996166],
+    "neighbors": ["Algeria", "Burkina Faso", "Côte d'Ivoire", "Guinea", "Mauritania", "Niger", "Senegal"]
+  },
+  "Malta": {
+    "coordinates": [35.937496, 14.375416],
+    "neighbors": ["Italy", "Libya"]
+  },
+  "Marshall Islands": {
+    "coordinates": [7.131474, 171.184478],
+    "neighbors": []
+  },
+  "Mauritania": {
+    "coordinates": [21.00789, -10.940835],
+    "neighbors": ["Algeria", "Cape Verde", "Mali", "Senegal", "Western Sahara"]
+  },
+  "Mauritius": {
+    "coordinates": [-20.348404, 57.552152],
+    "neighbors": ["France", "Madagascar", "Seychelles"]
+  },
+  "Mexico": {
+    "coordinates": [23.634501, -102.552784],
+    "neighbors": ["Belize", "Cuba", "Guatemala", "Honduras", "United States"]
+  },
+  "Micronesia": {
+    "coordinates": [7.425554, 150.550812],
+    "neighbors": []
+  },
+  "Moldova": {
+    "coordinates": [47.411631, 28.369885],
+    "neighbors": ["Romania", "Transnistria", "Ukraine"]
+  },
+  "Monaco": {
+    "coordinates": [43.738417, 7.424615],
+    "neighbors": ["France"]
+  },
+  "Mongolia": {
+    "coordinates": [46.862496, 103.846656],
+    "neighbors": ["China", "Russia"]
+  },
+  "Montenegro": {
+    "coordinates": [42.708678, 19.37439],
+    "neighbors": ["Albania", "Bosnia and Herzegovina", "Croatia", "Italy", "Serbia", "Kosovo"]
+  },
+  "Morocco": {
+    "coordinates": [31.791702, -7.09262],
+    "neighbors": ["Algeria", "Portugal", "Spain", "Western Sahara"]
+  },
+  "Mozambique": {
+    "coordinates": [-18.665695, 35.529562],
+    "neighbors": ["Comoros", "Eswatini", "Madagascar", "Malawi", "South Africa", "Tanzania", "Zambia", "Zimbabwe"]
+  },
+  "Myanmar": {
+    "coordinates": [21.913965, 95.956223],
+    "neighbors": ["Bangladesh", "China", "India", "Laos", "Thailand"]
+  },
+  "Namibia": {
+    "coordinates": [-22.95764, 18.49041],
+    "neighbors": ["Angola", "Botswana", "South Africa", "Zambia"]
+  },
+  "Nauru": {
+    "coordinates": [-0.522778, 166.931503],
+    "neighbors": []
+  },
+  "Nepal": {
+    "coordinates": [28.394857, 84.124008],
+    "neighbors": ["India", "China"]
+  },
+  "Netherlands": {
+    "coordinates": [52.132633, 5.291266],
+    "neighbors": ["Belgium", "Germany", "Saint Kitts and Nevis", "United Kingdom", "Venezuela"]
+  },
+  "New Zealand": {
+    "coordinates": [-40.900557, 174.885971],
+    "neighbors": ["Australia", "Fiji"]
+  },
+  "Nicaragua": {
+    "coordinates": [12.865416, -85.207229],
+    "neighbors": ["Colombia", "Costa Rica", "El Salvador", "Honduras", "Jamaica", "Panama"]
+  },
+  "Niger": {
+    "coordinates": [17.607789, 8.081666],
+    "neighbors": ["Algeria", "Benin", "Burkina Faso", "Chad", "Libya", "Mali", "Nigeria"]
+  },
+  "Nigeria": {
+    "coordinates": [9.081999, 8.675277],
+    "neighbors": ["Benin", "Cameroon", "Chad", "Equatorial Guinea", "Niger", "São Tomé and Príncipe"]
+  },
+  "North Korea": {
+    "coordinates": [40.339852, 127.510093],
+    "neighbors": ["China", "South Korea", "Russia", "Japan"]
+  },
+  "North Macedonia": {
+    "coordinates": [41.608635, 21.745275],
+    "neighbors": ["Albania", "Bulgaria", "Greece", "Serbia", "Kosovo"]
+  },
+  "Norway": {
+    "coordinates": [60.472024, 8.468946],
+    "neighbors": ["Denmark", "Finland", "Russia", "Sweden", "United Kingdom"]
+  },
+  "Oman": {
+    "coordinates": [21.512583, 55.923255],
+    "neighbors": ["Iran", "Pakistan", "Saudi Arabia", "United Arab Emirates", "Yemen"]
+  },
+  "Pakistan": {
+    "coordinates": [30.375321, 69.345116],
+    "neighbors": ["Afghanistan", "China", "India", "Iran", "Oman"]
+  },
+  "Palau": {
+    "coordinates": [7.51498, 134.58252],
+    "neighbors": ["Indonesia", "Federated States of Micronesia", "Philippines"]
+  },
+  "Panama": {
+    "coordinates": [8.537981, -80.782127],
+    "neighbors": ["Colombia", "Costa Rica", "Nicaragua"]
+  },
+  "Papua New Guinea": {
+    "coordinates": [-6.314993, 143.95555],
+    "neighbors": ["Australia", "Indonesia", "Federated States of Micronesia", "Solomon Islands"]
+  },
+  "Paraguay": {
+    "coordinates": [-23.442503, -58.443832],
+    "neighbors": ["Argentina", "Bolivia", "Brazil"]
+  },
+  "Peru": {
+    "coordinates": [-9.189967, -75.015152],
+    "neighbors": ["Bolivia", "Brazil", "Chile", "Colombia", "Ecuador"]
+  },
+  "Philippines": {
+    "coordinates": [12.879721, 121.774017],
+    "neighbors": ["Brunei", "China", "Indonesia", "Japan", "Malaysia", "Palau", "Vietnam", "Taiwan"]
+  },
+  "Poland": {
+    "coordinates": [51.919438, 19.145136],
+    "neighbors": ["Belarus", "Czech Republic", "Denmark", "Germany", "Lithuania", "Russia", "Slovakia", "Sweden", "Ukraine"]
+  },
+  "Portugal": {
+    "coordinates": [39.399872, -8.224454],
+    "neighbors": ["Morocco", "Spain"]
+  },
+  "Qatar": {
+    "coordinates": [25.354826, 51.183884],
+    "neighbors": ["Bahrain", "Iran", "Saudi Arabia", "United Arab Emirates"]
+  },
+  "Romania": {
+    "coordinates": [45.943161, 24.96676],
+    "neighbors": ["Bulgaria", "Hungary", "Moldova", "Russia", "Serbia", "Ukraine"]
+  },
+  "Russia": {
+    "coordinates": [61.52401, 105.318756],
+    "neighbors": ["Abkhazia", "Azerbaijan", "Belarus", "Bulgaria", "China", "Estonia", "Finland", "Georgia", "Japan", "Kazakhstan", "North Korea", "Latvia", "Lithuania", "Mongolia", "Norway", "Poland", "Romania", "South Ossetia", "Sweden", "Turkey", "Ukraine", "United States"]
+  },
+  "Rwanda": {
+    "coordinates": [-1.940278, 29.873888],
+    "neighbors": ["Burundi", "Democratic Republic of the Congo", "Tanzania", "Uganda"]
+  },
+  "Saint Kitts and Nevis": {
+    "coordinates": [17.357822, -62.782998],
+    "neighbors": ["Antigua and Barbuda", "Netherlands", "Venezuela"]
+  },
+  "Saint Lucia": {
+    "coordinates": [13.909444, -60.978893],
+    "neighbors": ["Barbados", "France", "Saint Vincent and the Grenadines", "Venezuela"]
+  },
+  "Saint Vincent and the Grenadines": {
+    "coordinates": [12.984305, -61.287228],
+    "neighbors": ["Barbados", "Grenada", "Saint Lucia", "Trinidad and Tobago", "Venezuela"]
+  },
+  "Samoa": {
+    "coordinates": [-13.759029, -172.104629],
+    "neighbors": []
+  },
+  "San Marino": {
+    "coordinates": [43.94236, 12.457777],
+    "neighbors": ["Italy"]
+  },
+  "Sao Tome and Principe": {
+    "coordinates": [0.18636, 6.613081],
+    "neighbors": ["Equatorial Guinea", "Gabon", "Nigeria"]
+  },
+  "Saudi Arabia": {
+    "coordinates": [23.885942, 45.079162],
+    "neighbors": ["Bahrain", "Egypt", "Eritrea", "Iran", "Iraq", "Jordan", "Kuwait", "Oman", "Qatar", "Sudan", "United Arab Emirates", "Yemen"]
+  },
+  "Senegal": {
+    "coordinates": [14.497401, -14.452362],
+    "neighbors": ["Cape Verde", "The Gambia", "Guinea", "Guinea-Bissau", "Mali", "Mauritania"]
+  },
+  "Serbia": {
+    "coordinates": [44.016521, 21.005859],
+    "neighbors": ["Bosnia and Herzegovina", "Bulgaria", "Croatia", "Hungary", "Montenegro", "North Macedonia", "Romania", "Kosovo"]
+  },
+  "Seychelles": {
+    "coordinates": [-4.679574, 55.491977],
+    "neighbors": ["Comoros", "Madagascar", "Mauritius", "Tanzania"]
+  },
+  "Sierra Leone": {
+    "coordinates": [8.460555, -11.779889],
+    "neighbors": ["Guinea", "Liberia"]
+  },
+  "Singapore": {
+    "coordinates": [1.352083, 103.819836],
+    "neighbors": ["Indonesia", "Malaysia"]
+  },
+  "Slovakia": {
+    "coordinates": [48.669026, 19.699024],
+    "neighbors": ["Austria", "Czech Republic", "Hungary", "Poland", "Ukraine"]
+  },
+  "Slovenia": {
+    "coordinates": [46.151241, 14.995463],
+    "neighbors": ["Austria", "Croatia", "Italy", "Hungary"]
+  },
+  "Solomon Islands": {
+    "coordinates": [-9.64571, 160.156194],
+    "neighbors": ["Fiji", "Papua New Guinea", "Vanuatu"]
+  },
+  "Somalia": {
+    "coordinates": [5.152149, 46.199616],
+    "neighbors": ["Ethiopia", "Kenya", "Somaliland", "Yemen"]
+  },
+  "South Africa": {
+    "coordinates": [-30.559482, 22.937506],
+    "neighbors": ["Botswana", "Eswatini", "Lesotho", "Mozambique", "Namibia", "Zimbabwe"]
+  },
+  "South Korea": {
+    "coordinates": [35.907757, 127.766922],
+    "neighbors": ["China", "Japan", "North Korea"]
+  },
+  "South Sudan": {
+    "coordinates": [6.876992, 31.306978],
+    "neighbors": ["Central African Republic", "Democratic Republic of the Congo", "Ethiopia", "Kenya", "Sudan", "Uganda"]
+  },
+  "Spain": {
+    "coordinates": [40.463667, -3.74922],
+    "neighbors": ["Algeria", "Andorra", "France", "Italy", "Morocco", "Portugal", "Western Sahara"]
+  },
+  "Sri Lanka": {
+    "coordinates": [7.873054, 80.771797],
+    "neighbors": ["India", "Maldives"]
+  },
+  "Sudan": {
+    "coordinates": [12.862807, 30.217636],
+    "neighbors": ["Central African Republic", "Chad", "Egypt", "Eritrea", "Ethiopia", "Libya", "Saudi Arabia", "South Sudan"]
+  },
+  "Suriname": {
+    "coordinates": [3.919305, -56.027783],
+    "neighbors": ["Brazil", "France", "Guyana"]
+  },
+  "Sweden": {
+    "coordinates": [60.128161, 18.643501],
+    "neighbors": ["Denmark", "Estonia", "Finland", "Germany", "Latvia", "Lithuania", "Norway", "Poland", "Russia"]
+  },
+  "Switzerland": {
+    "coordinates": [46.818188, 8.227512],
+    "neighbors": ["Austria", "France", "Italy", "Liechtenstein", "Germany"]
+  },
+  "Syria": {
+    "coordinates": [34.802075, 38.996815],
+    "neighbors": ["Cyprus", "Iraq", "Israel", "Jordan", "Lebanon", "Turkey", "Northern Cyprus"]
+  },
+  "Taiwan": {
+    "coordinates": [23.69781, 120.960515],
+    "neighbors": ["Brunei", "China", "Indonesia", "Japan", "Malaysia", "Philippines", "Vietnam"]
+  },
+  "Tajikistan": {
+    "coordinates": [38.861034, 71.276093],
+    "neighbors": ["Afghanistan", "China", "Kyrgyzstan", "Uzbekistan"]
+  },
+  "Tanzania": {
+    "coordinates": [-6.369028, 34.888822],
+    "neighbors": ["Burundi", "Comoros", "Democratic Republic of the Congo", "Kenya", "Malawi", "Mozambique", "Rwanda", "Seychelles", "Uganda", "Zambia"]
+  },
+  "Thailand": {
+    "coordinates": [15.870032, 100.992541],
+    "neighbors": ["Myanmar", "Cambodia", "India", "Indonesia", "Laos", "Malaysia", "Vietnam"]
+  },
+  "Timor-Leste": {
+    "coordinates": [-8.874217, 125.727539],
+    "neighbors": ["Australia", "Indonesia"]
+  },
+  "Togo": {
+    "coordinates": [8.619543, 0.824782],
+    "neighbors": ["Benin", "Burkina Faso", "Ghana"]
+  },
+  "Tonga": {
+    "coordinates": [-21.178986, -175.198242],
+    "neighbors": ["Fiji", "Samoa"]
+  },
+  "Trinidad and Tobago": {
+    "coordinates": [10.691803, -61.222503],
+    "neighbors": ["Barbados", "Grenada", "Guyana", "Saint Vincent and the Grenadines", "Venezuela"]
+  },
+  "Tunisia": {
+    "coordinates": [33.886917, 9.537499],
+    "neighbors": ["Algeria", "Italy", "Libya"]
+  },
+  "Turkey": {
+    "coordinates": [38.963745, 35.243322],
+    "neighbors": ["Abkhazia", "Armenia", "Azerbaijan", "Bulgaria", "Cyprus", "Georgia", "Greece", "Iran", "Iraq", "Russia", "Syria", "Ukraine", "Northern Cyprus"]
+  },
+  "Turkmenistan": {
+    "coordinates": [38.969719, 59.556278],
+    "neighbors": ["Afghanistan", "Azerbaijan", "Iran", "Kazakhstan", "Uzbekistan"]
+  },
+  "Tuvalu": {
+    "coordinates": [-7.109535, 177.64933],
+    "neighbors": ["Fiji", "Kiribati"]
+  },
+  "Uganda": {
+    "coordinates": [1.373333, 32.290275],
+    "neighbors": ["Democratic Republic of the Congo", "Kenya", "Rwanda", "South Sudan", "Tanzania"]
+  },
+  "Ukraine": {
+    "coordinates": [48.379433, 31.16558],
+    "neighbors": ["Belarus", "Bulgaria", "Hungary", "Moldova", "Poland", "Romania", "Russia", "Slovakia", "Transnistria", "Turkey"]
+  },
+  "United Arab Emirates": {
+    "coordinates": [23.424076, 53.847818],
+    "neighbors": ["Iran", "Oman", "Qatar", "Saudi Arabia"]
+  },
+  "United Kingdom": {
+    "coordinates": [55.378051, -3.435973],
+    "neighbors": ["Belgium", "Denmark", "France", "Germany", "Ireland", "Netherlands", "Norway"]
+  },
+  "United States": {
+    "coordinates": [37.09024, -95.712891],
+    "neighbors": ["Bahamas", "Canada", "Cuba", "Mexico", "Russia"]
+  },
+  "Uruguay": {
+    "coordinates": [-32.522779, -55.765835],
+    "neighbors": ["Argentina", "Brazil"]
+  },
+  "Uzbekistan": {
+    "coordinates": [41.377491, 64.585262],
+    "neighbors": ["Afghanistan", "Kazakhstan", "Kyrgyzstan", "Tajikistan", "Turkmenistan"]
+  },
+  "Vanuatu": {
+    "coordinates": [-15.376706, 166.959158],
+    "neighbors": ["Fiji", "Solomon Islands"]
+  },
+  "Vatican City": {
+    "coordinates": [41.902916, 12.453389],
+    "neighbors": ["Italy"]
+  },
+  "Venezuela": {
+    "coordinates": [6.42375, -66.58973],
+    "neighbors": ["Barbados", "Brazil", "Colombia", "Dominica", "Dominican Republic", "France", "Grenada", "Guyana", "Netherlands", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Trinidad and Tobago"]
+  },
+  "Vietnam": {
+    "coordinates": [14.058324, 108.277199],
+    "neighbors": ["Brunei", "Cambodia", "China", "Indonesia", "Laos", "Malaysia", "Philippines", "Taiwan", "Thailand"]
+  },
+  "Yemen": {
+    "coordinates": [15.552727, 48.516388],
+    "neighbors": ["Djibouti", "Eritrea", "Somaliland", "Oman", "Saudi Arabia", "Somalia"]
+  },
+  "Zambia": {
+    "coordinates": [-13.133897, 27.849332],
+    "neighbors": ["Angola", "Botswana", "Democratic Republic of the Congo", "Malawi", "Mozambique", "Namibia", "Tanzania", "Zimbabwe"]
+  },
+  "Zimbabwe": {
+    "coordinates": [-19.015438, 29.154857],
+    "neighbors": ["Botswana", "Mozambique", "South Africa", "Zambia"]
+  }
+}
